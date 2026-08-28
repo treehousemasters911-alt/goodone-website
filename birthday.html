@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#fff8f4">
+	<title>A Little Birthday Surprise</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="birthday.css">
+</head>
+<body>
+	<div class="background-shape shape-one" aria-hidden="true"></div>
+	<div class="background-shape shape-two" aria-hidden="true"></div>
+
+	<section class="welcome-gate" id="welcome-gate" aria-labelledby="welcome-title">
+		<div class="welcome-card">
+			<div class="mini-heart">♥</div>
+			<div class="eyebrow">a little surprise</div>
+			<h1 id="welcome-title">This is just<br><em>for you.</em></h1>
+			<p>There is something special waiting inside. Enter the little secret to begin.</p>
+			<form id="welcome-form">
+				<label for="welcome-password">Our special date</label>
+				<div class="password-entry">
+					<input id="welcome-password" type="password" autocomplete="off" placeholder="Enter the secret" required>
+					<button class="button button-primary" type="submit">Enter <span>→</span></button>
+				</div>
+				<p class="error-message" id="welcome-error" aria-live="polite"></p>
+			</form>
+			<span class="welcome-hint">a date only we know ♥</span>
+		</div>
+	</section>
+
+	<main class="surprise-shell" id="surprise-content" hidden>
+		<div class="topbar">
+			<span class="topbar-mark">a little note</span>
+			<span class="step-count" aria-live="polite">01 / 05</span>
+		</div>
+
+		<div class="progress-track" aria-hidden="true"><span class="progress-bar"></span></div>
+
+		<section class="scene is-active" data-scene="0" aria-labelledby="opening-title">
+			<div class="eyebrow">just for you</div>
+			<h1 id="opening-title">I made something<br><em>special</em> for you...</h1>
+			<p class="lede">A tiny collection of memories, appreciation, and one last little surprise.</p>
+			<div class="gift-wrap" aria-hidden="true">
+				<div class="sparkle sparkle-a">✦</div><div class="sparkle sparkle-b">✧</div>
+				<div class="gift-lid"><span></span></div>
+				<div class="gift-box"><i></i><b></b></div>
+			</div>
+			<button class="button button-primary" id="open-gift" type="button">Open your gift <span>→</span></button>
+		</section>
+
+		<section class="scene" data-scene="1" aria-labelledby="birthday-title" hidden>
+			<div class="eyebrow">today is yours</div>
+			<h2 id="birthday-title">Happy <em>Birthday!</em></h2>
+			<div class="message-card">
+				<div class="quote-mark">“</div>
+				<p>I hope today brings you as many happy moments as you bring to the people around you.</p>
+				<span class="card-signoff">with all my love</span>
+			</div>
+			<button class="button button-primary next-button" type="button">Continue <span>→</span></button>
+		</section>
+
+		<section class="scene scene-wide" data-scene="2" aria-labelledby="memories-title" hidden>
+			<div class="eyebrow">little snapshots</div>
+			<h2 id="memories-title">Our <em>memories</em></h2>
+			<p class="section-intro">A little album of moments I keep close, always.</p>
+			<div class="memory-grid">
+				<article class="memory-card memory-album">
+					<div class="album-heading"><div><p>Our first memory</p><small>where it all began</small></div><span class="album-count">16 memories</span></div>
+					<div class="album-grid">
+						<figure class="album-item album-item-large"><img src="photo_2026-08-28_11-34-00.jpg" alt="A first memory together" loading="lazy"></figure>
+						<figure class="album-item"><img src="photo_2026-08-28_11-34-02.jpg" alt="A close-up smile" loading="lazy"></figure>
+						<figure class="album-item"><img src="photo_2026-08-28_11-40-21.jpg" alt="A playful moment together" loading="lazy"></figure>
+						<figure class="album-item"><img src="photo_2026-08-28_11-45-09.jpg" alt="A sweet moment together" loading="lazy"></figure>
+						<figure class="album-item"><img src="photo_2026-08-28_11-45-11.jpg" alt="A happy memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="photo_2026-08-28_11-45-19.jpg" alt="A funny memory together" loading="lazy"></figure>
+						<figure class="album-item"><img src="photo_2026-08-28_11-45-23.jpg" alt="A favorite memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="photo_2026-08-28_11-45-26.jpg" alt="A warm memory together" loading="lazy"></figure>
+						<figure class="album-item"><img src="photo_2026-08-28_11-45-30.jpg" alt="A beautiful memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="photo_2026-08-28_11-45-33.jpg" alt="A moment to remember" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125516_599.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item album-video"><video src="video_2026-08-28_11-40-23.mp4" controls preload="metadata" aria-label="Video memory from our first album"></video></figure>
+						<figure class="album-item album-video"><video src="video_2026-08-28_11-45-05.mp4" controls preload="metadata" aria-label="Video memory from our album"></video></figure>
+						<figure class="album-item album-video"><video src="video_2026-08-28_11-45-12.mp4" controls preload="metadata" aria-label="Video memory from our album"></video></figure>
+						<figure class="album-item album-video"><video src="video_2026-08-28_11-45-17.mp4" controls preload="metadata" aria-label="Video memory from our album"></video></figure>
+						<figure class="album-item album-video"><video src="video_2026-08-28_11-45-21.mp4" controls preload="metadata" aria-label="Video memory from our album"></video></figure>
+					</div>
+				</article>
+				<article class="memory-card memory-album">
+					<div class="album-heading"><div><p>That funny day</p><small>still makes me smile</small></div><span class="album-count">46 memories</span></div>
+					<div class="album-grid">
+						<figure class="album-item album-item-large"><img src="our memories/IMG_20260828_125523_993.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125417_125.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125417_629.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125417_703.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125417_735.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125421_439.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125427_116.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125427_417.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125433_036.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125434_321.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125435_620.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125438_100.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125438_347.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125438_404.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125438_426.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125438_435.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125438_474.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125438_648.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125442_969.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125443_639.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125452_996.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125455_460.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125456_744.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125459_521.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125500_364.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125503_190.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125503_363.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125504_969.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125506_546.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125508_500.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125512_855.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125518_660.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125518_754.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125519_200.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125519_250.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125519_490.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125519_538.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125523_680.jpg" alt="A funny day memory" loading="lazy"></figure>
+						
+						<figure class="album-item"><img src="our memories/IMG_20260828_125524_002.jpg" alt="A funny day memory" loading="lazy"></figure>
+						<figure class="album-item"><img src="our memories/IMG_20260828_125524_292.jpg" alt="A funny day memory" loading="lazy"></figure>
+					</div>
+				</article>
+				<article class="memory-card memory-album">
+					<div class="album-heading"><div>
+						<p>A moment I'll always remember</p><small>one for the heart</small></div><span class="album-count" id="moment-album-count">memories</span></div>
+					<div class="album-grid" id="moment-album-grid"></div>
+				</article>
+			</div>
+			<button class="button button-primary next-button" type="button">Keep going <span>→</span></button>
+		</section>
+
+		<section class="scene scene-wide" data-scene="3" aria-labelledby="appreciate-title" hidden>
+			<div class="eyebrow">three little things</div>
+			<h2 id="appreciate-title">What I <em>appreciate</em></h2>
+			<p class="section-intro">Tap each one. There is a note waiting underneath.</p>
+			<div class="appreciation-grid">
+				<button class="appreciation-card" type="button"><span class="card-number">01</span><strong>Your kindness</strong><span class="card-note">You make the world softer just by being in it.</span><span class="card-hint">tap to reveal +</span></button>
+				<button class="appreciation-card" type="button"><span class="card-number">02</span><strong>Your smile</strong><span class="card-note">It is my favorite kind of sunshine.</span><span class="card-hint">tap to reveal +</span></button>
+				<button class="appreciation-card" type="button"><span class="card-number">03</span><strong>The way you make ordinary moments special</strong><span class="card-note">With you, even the in-between moments feel like memories.</span><span class="card-hint">tap to reveal +</span></button>
+			</div>
+			<button class="button button-primary next-button" type="button">One more thing <span>→</span></button>
+		</section>
+
+		<section class="scene" data-scene="4" aria-labelledby="final-title" hidden>
+			<div class="eyebrow">almost there</div>
+			<h2 id="final-title">I saved one <em>last thing</em></h2>
+			<p class="lede">A small secret for the person who makes my days brighter.</p>
+			<div class="envelope" aria-hidden="true"><span>♥</span></div>
+			<button class="button button-primary" id="last-thing" type="button">One Last Thing... <span>✦</span></button>
+		</section>
+	</main>
+
+	<div class="celebration" id="celebration" hidden>
+		<div class="confetti" aria-hidden="true"></div>
+		<div class="celebration-content">
+			<div class="eyebrow">you found it</div>
+			<div class="big-heart">♥</div>
+			<h2>My favorite place<br>is <em>with you.</em></h2>
+			<p>Happy birthday to someone truly wonderful. Thank you for making life feel a little more beautiful every day.</p>
+			<span class="final-signoff">Love, always ♥</span>
+		</div>
+	</div>
+
+	<div class="photo-lightbox" id="photo-lightbox" hidden>
+		<button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close photo">&times;</button>
+		<button class="lightbox-nav lightbox-prev" id="lightbox-prev" type="button" aria-label="Previous memory">&#8249;</button>
+		<div class="lightbox-media" id="lightbox-media"></div>
+		<button class="lightbox-nav lightbox-next" id="lightbox-next" type="button" aria-label="Next memory">&#8250;</button>
+	</div>
+
+	<script src="birthday.js"></script>
+</body>
+</html>
